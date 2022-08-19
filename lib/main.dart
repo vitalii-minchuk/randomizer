@@ -1,28 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/range_selector_page.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomePage(),
-    ),
-  );
+  runApp(const AppWidget());
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({ Key? key }) : super(key: key);
+class AppWidget extends StatelessWidget {
+  const AppWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return Scaffold(
-      appBar: AppBar(title: const Text('Register')),
-      body: Center(
-        child: Column(),
-      ),
+    return const MaterialApp(
+      title: 'Randomizer',
+      home: RangeSelectorPage(),
     );
   }
 }
+
