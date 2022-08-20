@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_2/range_selector_page.dart';
+import 'package:flutter_application_2/screens/bottom_bar.dart';
 
 void main() {
   runApp(const AppWidget());
@@ -11,8 +11,8 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return const MaterialApp(
-      title: 'Randomizer',
-      home: RangeSelectorPage(),
+      title: 'tickets',
+      home: BottomBar(),
     );
   }
 }
