@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_2/screens/bottom_bar.dart';
+import 'package:flutter_application_2/utils/app_styles.dart';
 
 void main() {
   runApp(const AppWidget());
@@ -10,9 +11,13 @@ class AppWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'tickets',
-      home: BottomBar(),
+      theme: ThemeData(
+        primaryColor: primary,
+      ),
+      home: const BottomBar(),
     );
   }
 }
