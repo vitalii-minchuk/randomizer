@@ -25,45 +25,47 @@ const SearchScreen({ Key? key }) : super(key: key);
             style: Styles.headLineStyle1.copyWith(fontSize: AppLayout.getHeight(35)),
           ),
           Gap(AppLayout.getHeight(20)),
-          Container(
-            padding: const EdgeInsets.all(5),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
-              color: const Color(0xFFF4f6FD),
-            ),
-            child: Row(
-              children: [
-                Container(
-                  width: size.width * 0.44,
-                  padding: EdgeInsets.symmetric(
-                    vertical: AppLayout.getHeight(7)
-                  ),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.horizontal(
-                      left: Radius.circular(AppLayout.getHeight(50)),
+          FittedBox(
+            child: Container(
+              padding: const EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppLayout.getHeight(50)),
+                color: const Color(0xFFF4f6FD),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: size.width * 0.44,
+                    padding: EdgeInsets.symmetric(
+                      vertical: AppLayout.getHeight(7)
                     ),
-                    color: Colors.white,
-                  ),
-                  child: const Center(
-                    child: Text('Airline tickets'),
-                  ),
-                ),
-                Container(
-                  width: size.width * 0.44,
-                  padding: EdgeInsets.symmetric(
-                    vertical: AppLayout.getHeight(7)
-                  ),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.horizontal(
-                      right: Radius.circular(AppLayout.getHeight(50)),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.horizontal(
+                        left: Radius.circular(AppLayout.getHeight(50)),
+                      ),
+                      color: Colors.white,
                     ),
-                    color: Colors.grey.shade200,
+                    child: const Center(
+                      child: Text('Airline tickets'),
+                    ),
                   ),
-                  child: const Center(
-                    child: Text('Hotels'),
+                  Container(
+                    width: size.width * 0.44,
+                    padding: EdgeInsets.symmetric(
+                      vertical: AppLayout.getHeight(7)
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.horizontal(
+                        right: Radius.circular(AppLayout.getHeight(50)),
+                      ),
+                      color: Colors.grey.shade200,
+                    ),
+                    child: const Center(
+                      child: Text('Hotels'),
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Gap(AppLayout.getHeight(25)),

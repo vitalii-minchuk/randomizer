@@ -64,9 +64,9 @@ const TicketView({ Key? key, required this.ticket}) : super(key: key);
                                         ),
                                       ),
                                   );
-                                  }
-                                ),
+                                }
                               ),
+                            ),
                             Center(
                               child: Transform.rotate(angle: 1.5, child: const Icon(
                                 Icons.local_airport_rounded, color: Colors.white
@@ -91,7 +91,7 @@ const TicketView({ Key? key, required this.ticket}) : super(key: key);
                       SizedBox(
                         width: AppLayout.getWidth(100),
                         child: Text(
-                          '${ticket['from']['code']}',
+                          '${ticket['from']['name']}',
                           style: Styles.headLineStyle4.copyWith(
                             color: Colors.white
                           ),
